@@ -1,0 +1,105 @@
+:root {
+  font-size: 100%;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 130vh;
+}
+.container {
+  background-color: hsl(244, 38%, 16%);
+  width: 28rem;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 100%;
+  height: 30vh;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+img + div {
+  padding: 2rem;
+}
+h2,
+h3 {
+  color: hsl(0, 0%, 100%);
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+span {
+  color: hsl(277, 64%, 61%);
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 1.33rem;
+  line-height: 2rem;
+  margin: 2rem 0px 3rem;
+  opacity: 80%;
+}
+.bottom {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h3 + p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+img {
+  filter: invert(30%) sepia(10%) saturate(3185%) hue-rotate(230deg)
+    brightness(55%) contrast(100%);
+}
+@media (min-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    flex-direction: row-reverse;
+    width: 75rem;
+    text-align: left;
+    height: 27rem;
+  }
+  img {
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 1rem;
+  }
+  img + div {
+    padding: 2rem 8rem 0rem 3rem;
+  }
+  p {
+    margin: 2rem 1rem 0 0;
+    font-size: 1rem;
+  }
+  .bottom {
+    height: 18vh;
+    flex-direction: row;
+    align-items: center;
+  }
+}
